@@ -45,7 +45,7 @@ This project implements a **Dual-Locomotion Convertible Drone** that transitions
 ### 🔧 Flight Controller Wiring
 Below is the physical wiring layout of the Arduino UNO flight controller core:
 
-(images/img 3.jpeg)
+![Arduino UNO Flight Controller Wiring and Electronics](images/img 3.jpeg)
 
 ---
 

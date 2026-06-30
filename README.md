@@ -42,6 +42,11 @@ This project implements a **Dual-Locomotion Convertible Drone** that transitions
 *   **Power Bus:** 3S LiPo battery (11.1V, 2200mAh) isolated through a 5V BEC (Battery Eliminator Circuit) to prevent motor noise from resetting the Arduino.
 *   **Telemetry Alarms:** Resistor divider (A4) and active piezo buzzer (D12) for voltage and connection alarms.
 
+### 🔧 Flight Controller Wiring
+Below is the physical wiring layout of the Arduino UNO flight controller core:
+
+![Arduino UNO Flight Controller Wiring and Electronics](images/img 3.jpeg)
+
 ---
 
 ## 📋 Pin Mapping (Convertible Drone)
@@ -102,6 +107,18 @@ Located in `firmware/f450_rfid_delivery/`, this project represents a quadcopter 
     *   **Propulsion ESCs:** D9, D10, D5, D6
     *   **Receiver Input Interrupts:** D2 (Roll), D3 (Pitch), D4 (Throttle)
 
+### 📸 F450 Prototype Construction
+Below are photos of the completed RFID-authenticated F450 quadcopter prototype:
+
+#### 1. Secure Container Box Locking & RFID Swipe Antenna
+![RFID Card Swiping Lock Check](images/img 1.jpeg)
+
+#### 2. Cargo Box Container Mounted Underneath Frame
+![Secure Container Box Mounting](images/img 2.jpeg)
+
+#### 3. Full Prototype Assembly and RC Transmitter
+![F450 Medical Cargo Drone Prototype](images/img 4.jpeg)
+
 ---
 
 ## 📂 Repository Structure
@@ -128,22 +145,3 @@ The code and assets are organized as follows:
 *   **`patent/`** - Drafts and generation scripts for the RFID cargo box patent application.
 
 ---
-
-## 🚀 Running the Presentation Files
-
-### 1. View the HTML Slideshow
-Simply open `presentation/slides.html` in any web browser. You can navigate using the left/right arrow keys or click the control buttons on the slide deck.
-
-### 2. Generate the PowerPoint File (`.pptx`)
-If you modify the slides script and want to export a new `.pptx` file:
-```bash
-cd presentation/
-# Create a local virtual environment
-python3 -m venv venv
-source venv/bin/activate
-# Install python-pptx
-pip install python-pptx
-# Run the generator
-python3 generate_pptx.py
-```
-This will rebuild `medicine_drone_presentation.pptx` inside the `presentation` folder.
